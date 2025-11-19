@@ -6,7 +6,9 @@ Perfect for students, educators, and beginners learning Data Structures.
 ---
 Live Demo :- https://chetan123chavan.github.io/Array-Operation-Visualizer/
 
-# 🚀 Features
+
+🚀 Features
+---
 🎯 Visual Array Operations
 
 Experience animated visualizations for:
@@ -21,7 +23,8 @@ Search — Sequential highlighting animation (🟡 Yellow)
 
 ---
 
-# 🧮 Interactive Controls
+🧮 Interactive Controls
+---
 
 Modal-based operation inputs
 
@@ -33,7 +36,8 @@ Random value generator (choose array size)
 
 ---
 
-# 🎨 Modern Visualization
+🎨 Modern Visualization
+---
 
 Clean UI with gradient backgrounds
 
@@ -45,13 +49,15 @@ Smooth and pleasing animations
 
 ---
 
-# 🌗 Dark / Light Mode
+🌗 Dark / Light Mode
+---
 
 Switch themes anytime for comfortable viewing.
 
 ---
 
-# 📘 Operation History
+📘 Operation History
+---
 
 Track all performed operations with:
 
@@ -63,7 +69,8 @@ Step-by-step explanation
 
 ---
 
-# ⏱️ Speed Control
+⏱️ Speed Control
+---
 
 Adjust animation speed:
 
@@ -79,7 +86,8 @@ Very Fast
 
 ---
 
-# 📱 Responsive Design
+📱 Responsive Design
+---
 
 Fully optimized for:
 
@@ -91,7 +99,8 @@ Mobile devices
 
 ---
 
-# 🛠️ Technical Highlights
+🛠️ Technical Highlights
+---
 
 100% Frontend-only (no backend required)
 
@@ -105,7 +114,9 @@ Works in all modern browsers
 
 ---
 
-# 🧩 Operations Supported
+🧩 Operations Supported
+---
+
 Operation	Description	Color
 Insert	Adds new element	🟢 Green
 Delete	Removes element	🔴 Red
@@ -114,7 +125,9 @@ Search	Linear search visualization	🟡 Yellow
 
 ---
 
-# 🎨 Color Legend
+🎨 Color Legend
+---
+
 Color	Meaning
 🟢 Green	Inserted element
 🔴 Red	Deleted element
@@ -123,7 +136,9 @@ Color	Meaning
 
 ----
 
-# 🧑‍💻 How to Use
+🧑‍💻 How to Use
+---
+
 1️⃣ Generate Array
 
 Choose number of elements
@@ -144,7 +159,7 @@ Search
 
 Each opens a dedicated modal.
 
----
+
 
 3️⃣ Provide Inputs
 
@@ -162,15 +177,16 @@ Follow step-by-step instructions.
 
 Enjoy the clean, visual flow of operations.
 
----
+
 
 5️⃣ Review History
 
 See the list of all actions for learning & revision.
 
----
+
 
 🖥️ Browser Compatibility
+---
 
 Works on all modern browsers:
 
@@ -184,7 +200,8 @@ Edge 90+
 
 ---
 
-# 🧠 Ideal For:
+🧠 Ideal For:
+---
 
 ✔ Students learning Data Structures
 ✔ Teachers demonstrating array operations
@@ -194,14 +211,16 @@ Edge 90+
 
 ---
 
-# 🤝 Contributing
+🤝 Contributing
+---
 
 Contributions are welcome!
 Feel free to submit issues or pull requests to improve the project.
 
 ---
 
-# 📝 License
+📝 License
+---
 
 This project is licensed under the MIT License.
 
