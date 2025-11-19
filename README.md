@@ -1,9 +1,12 @@
-📊 # Array-Operation-Visualizer
-
+# 📊 Array-Operation-Visualizer
+---
 A modern, interactive web application for visualizing core array operations with beautiful animations and intuitive controls.
 Perfect for students, educators, and beginners learning Data Structures.
+
 ---
-🚀 Features
+Live Demo :- https://chetan123chavan.github.io/Array-Operation-Visualizer/
+
+# 🚀 Features
 🎯 Visual Array Operations
 
 Experience animated visualizations for:
@@ -15,8 +18,9 @@ Delete — Fade-out animation (🔴 Red)
 Update — Highlight + color-change animation (🔵 Blue)
 
 Search — Sequential highlighting animation (🟡 Yellow)
+---
 
-🧮 Interactive Controls
+# 🧮 Interactive Controls
 
 Modal-based operation inputs
 
@@ -25,8 +29,9 @@ Step-by-step instructions for beginners
 Indexed operations with validation
 
 Random value generator (choose array size)
+---
 
-🎨 Modern Visualization
+# 🎨 Modern Visualization
 
 Clean UI with gradient backgrounds
 
@@ -36,11 +41,15 @@ Beginner-friendly number displays
 
 Smooth and pleasing animations
 
-🌗 Dark / Light Mode
+---
+
+# 🌗 Dark / Light Mode
 
 Switch themes anytime for comfortable viewing.
 
-📘 Operation History
+---
+
+# 📘 Operation History
 
 Track all performed operations with:
 
@@ -50,7 +59,9 @@ Description
 
 Step-by-step explanation
 
-⏱️ Speed Control
+---
+
+# ⏱️ Speed Control
 
 Adjust animation speed:
 
@@ -64,7 +75,9 @@ Fast
 
 Very Fast
 
-📱 Responsive Design
+---
+
+# 📱 Responsive Design
 
 Fully optimized for:
 
@@ -74,7 +87,9 @@ Tablets
 
 Mobile devices
 
-🛠️ Technical Highlights
+---
+
+# 🛠️ Technical Highlights
 
 100% Frontend-only (no backend required)
 
@@ -86,19 +101,27 @@ Modular and clean code structure
 
 Works in all modern browsers
 
-🧩 Operations Supported
+---
+
+# 🧩 Operations Supported
 Operation	Description	Color
 Insert	Adds new element	🟢 Green
 Delete	Removes element	🔴 Red
 Update	Modifies existing element	🔵 Blue
 Search	Linear search visualization	🟡 Yellow
-🎨 Color Legend
+
+---
+
+# 🎨 Color Legend
 Color	Meaning
 🟢 Green	Inserted element
 🔴 Red	Deleted element
 🔵 Blue	Updated element
 🟡 Yellow	Searching element
-🧑‍💻 How to Use
+
+----
+
+# 🧑‍💻 How to Use
 1️⃣ Generate Array
 
 Choose number of elements
@@ -119,6 +142,8 @@ Search
 
 Each opens a dedicated modal.
 
+---
+
 3️⃣ Provide Inputs
 
 Enter:
@@ -135,9 +160,13 @@ Follow step-by-step instructions.
 
 Enjoy the clean, visual flow of operations.
 
+---
+
 5️⃣ Review History
 
 See the list of all actions for learning & revision.
+
+---
 
 🖥️ Browser Compatibility
 
@@ -150,3 +179,27 @@ Firefox 88+
 Safari 14+
 
 Edge 90+
+
+---
+
+# 🧠 Ideal For:
+
+✔ Students learning Data Structures
+✔ Teachers demonstrating array operations
+✔ Coding interviews preparation
+✔ Visual learners
+✔ Beginner-friendly learning projects
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+Feel free to submit issues or pull requests to improve the project.
+
+---
+
+# 📝 License
+
+This project is licensed under the MIT License.
+
