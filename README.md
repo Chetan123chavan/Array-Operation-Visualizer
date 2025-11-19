@@ -204,9 +204,13 @@ Edge 90+
 ---
 
 ✔ Students learning Data Structures
+
 ✔ Teachers demonstrating array operations
+
 ✔ Coding interviews preparation
+
 ✔ Visual learners
+
 ✔ Beginner-friendly learning projects
 
 ---
