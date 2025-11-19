@@ -1,8 +1,8 @@
-📊 Array-Operation-Visualizer
+📊 # Array-Operation-Visualizer
 
 A modern, interactive web application for visualizing core array operations with beautiful animations and intuitive controls.
 Perfect for students, educators, and beginners learning Data Structures.
-
+---
 🚀 Features
 🎯 Visual Array Operations
 
