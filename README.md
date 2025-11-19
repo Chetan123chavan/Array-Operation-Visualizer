@@ -18,6 +18,7 @@ Delete — Fade-out animation (🔴 Red)
 Update — Highlight + color-change animation (🔵 Blue)
 
 Search — Sequential highlighting animation (🟡 Yellow)
+
 ---
 
 # 🧮 Interactive Controls
@@ -29,6 +30,7 @@ Step-by-step instructions for beginners
 Indexed operations with validation
 
 Random value generator (choose array size)
+
 ---
 
 # 🎨 Modern Visualization
