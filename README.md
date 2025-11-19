@@ -1,64 +1,147 @@
-# Array-Operation-Visualizer
+📊 Array-Operation-Visualizer
 
 A modern, interactive web application for visualizing core array operations with beautiful animations and intuitive controls.
+Perfect for students, educators, and beginners learning Data Structures.
 
-# Features
-Visual Array Operations: Insert, Delete, Update, and Search with animated feedback
+🚀 Features
+🎯 Visual Array Operations
 
-Interactive Controls: Modal-based operation inputs with step-by-step guidance
+Experience animated visualizations for:
 
-Real-time Visualization: Color-coded animations for each operation type
+Insert — Slide-in + bounce animation (🟢 Green)
 
-Dark/Light Mode: Toggle between themes for comfortable viewing
+Delete — Fade-out animation (🔴 Red)
 
-Operation History: Track all operations with timestamps and explanations
+Update — Highlight + color-change animation (🔵 Blue)
 
-Speed Control: Adjust animation speed from very slow to very fast
+Search — Sequential highlighting animation (🟡 Yellow)
 
-Responsive Design: Works seamlessly on desktop and mobile devices
+🧮 Interactive Controls
 
-# Operations Supported
-Insert: Add elements with slide-in and bounce animations (Green)
+Modal-based operation inputs
 
-Delete: Remove elements with fade-out animations (Red)
+Step-by-step instructions for beginners
 
-Update: Modify elements with color-change animations (Blue)
+Indexed operations with validation
 
-Search: Sequential search with highlighting animations (Yellow)
+Random value generator (choose array size)
 
-# Color Legend
-🟢 Green: Inserted elements
+🎨 Modern Visualization
 
-🔴 Red: Deleted elements
+Clean UI with gradient backgrounds
 
-🔵 Blue: Updated elements
+Soft shadows & rounded containers
 
-🟡 Yellow: Searching elements
+Beginner-friendly number displays
 
-# How to Use
-Generate Array: Use the horizontal controls to set array size and generate random values
+Smooth and pleasing animations
 
-Perform Operations: Click quick action buttons to open operation modals
+🌗 Dark / Light Mode
 
-Enter Values: Follow the step-by-step instructions in each modal
+Switch themes anytime for comfortable viewing.
 
-Watch Animations: Observe the visual feedback for each operation
+📘 Operation History
 
-Review History: Check the operation history panel for detailed explanations
+Track all performed operations with:
 
-# Technical Features
-Pure frontend implementation (no backend required)
+Timestamp
 
-Smooth CSS animations and transitions
+Description
 
-Modern UI with gradient backgrounds and soft shadows
+Step-by-step explanation
 
-Professional typography and spacing
+⏱️ Speed Control
 
-Mobile-responsive design
+Adjust animation speed:
 
-# Browser Compatibility
-Works on all modern browsers including:
+Very Slow
+
+Slow
+
+Normal
+
+Fast
+
+Very Fast
+
+📱 Responsive Design
+
+Fully optimized for:
+
+Desktop
+
+Tablets
+
+Mobile devices
+
+🛠️ Technical Highlights
+
+100% Frontend-only (no backend required)
+
+HTML, CSS, and JavaScript
+
+Smooth CSS transitions
+
+Modular and clean code structure
+
+Works in all modern browsers
+
+🧩 Operations Supported
+Operation	Description	Color
+Insert	Adds new element	🟢 Green
+Delete	Removes element	🔴 Red
+Update	Modifies existing element	🔵 Blue
+Search	Linear search visualization	🟡 Yellow
+🎨 Color Legend
+Color	Meaning
+🟢 Green	Inserted element
+🔴 Red	Deleted element
+🔵 Blue	Updated element
+🟡 Yellow	Searching element
+🧑‍💻 How to Use
+1️⃣ Generate Array
+
+Choose number of elements
+
+Click Generate Random Values
+
+2️⃣ Perform Operations
+
+Use the quick-action buttons:
+
+Insert
+
+Delete
+
+Update
+
+Search
+
+Each opens a dedicated modal.
+
+3️⃣ Provide Inputs
+
+Enter:
+
+Value
+
+Index
+
+Other required parameters
+
+Follow step-by-step instructions.
+
+4️⃣ Watch Animation
+
+Enjoy the clean, visual flow of operations.
+
+5️⃣ Review History
+
+See the list of all actions for learning & revision.
+
+🖥️ Browser Compatibility
+
+Works on all modern browsers:
 
 Chrome 90+
 
@@ -67,5 +150,3 @@ Firefox 88+
 Safari 14+
 
 Edge 90+
-
-Perfect for educational purposes, coding interviews, and understanding fundamental data structure operations!
