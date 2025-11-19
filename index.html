@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Operations Visualizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <h1>Array Operations Visualizer</h1>
+                <p class="subtitle">A professional tool to visualize and understand array operations</p>
+            </div>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+                <span>Dark Mode</span>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="controls-section">
+                <div class="panel-title">
+                    <i class="fas fa-bolt"></i> Quick Actions
+                </div>
+                
+                <div class="quick-actions">
+                    <div class="quick-action-btn" id="insertAction">
+                        <div class="quick-action-icon">
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                        <div class="quick-action-text">Insert</div>
+                    </div>
+                    <div class="quick-action-btn" id="deleteAction">
+                        <div class="quick-action-icon">
+                            <i class="fas fa-minus-circle"></i>
+                        </div>
+                        <div class="quick-action-text">Delete</div>
+                    </div>
+                    <div class="quick-action-btn" id="updateAction">
+                        <div class="quick-action-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <div class="quick-action-text">Update</div>
+                    </div>
+                    <div class="quick-action-btn" id="searchAction">
+                        <div class="quick-action-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="quick-action-text">Search</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="visualization-section">
+                <!-- Horizontal Controls Bar -->
+                <div class="horizontal-controls">
+                    <div class="horizontal-control-group">
+                        <label for="arraySize">Array Size:</label>
+                        <input type="range" id="arraySize" min="3" max="15" value="5">
+                        <span id="arraySizeValue">5</span>
+                    </div>
+                    
+                    <button class="btn-primary horizontal-btn" id="generateBtn">
+                        <i class="fas fa-dice"></i> Generate
+                    </button>
+                    
+                    <div class="horizontal-control-group">
+                        <label for="speedSlider">Speed:</label>
+                        <input type="range" id="speedSlider" min="1" max="5" value="3" class="speed-slider">
+                        <span id="speedValue">Medium</span>
+                    </div>
+                    
+                    <button class="btn-light horizontal-btn" id="resetBtn">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+
+                <div class="status-bar">
+                    <div class="array-length">Array Length: <span id="arrayLength">0</span></div>
+                    <div class="operation-status" id="operationStatus">Ready</div>
+                </div>
+                
+                <div class="array-container" id="arrayContainer">
+                    <div class="empty-state">
+                        <p>Your array is empty. Add some values to get started!</p>
+                    </div>
+                </div>
+
+                <!-- Visual Controls Section (Legend and Animation below array) -->
+                <div class="visual-controls">
+                    <div class="visual-controls-card">
+                        <div class="panel-title">
+                            <i class="fas fa-palette"></i> Color Legend
+                        </div>
+                        <div class="legend">
+                            <div class="legend-item">
+                                <div class="legend-color insert-color"></div>
+                                <span>Inserted</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color delete-color"></div>
+                                <span>Deleted</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color update-color"></div>
+                                <span>Updated</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color search-color"></div>
+                                <span>Searching</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="visual-controls-card">
+                        <div class="panel-title">
+                            <i class="fas fa-tachometer-alt"></i> Animation Controls
+                        </div>
+                        <div class="speed-control">
+                            <label for="speedSlider">Animation Speed</label>
+                            <input type="range" id="speedSlider" min="1" max="5" value="3" class="speed-slider">
+                            <span id="speedValue">Medium</span>
+                        </div>
+                        <div style="margin-top: 15px; font-size: 0.9rem; color: var(--gray);">
+                            <p>Adjust the speed to control how fast animations play during operations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Array Section (Below visual controls) -->
+                <div class="array-info">
+                    <div class="info-title">About Arrays</div>
+                    <div class="info-content">
+                        <p>An array is a data structure that stores a collection of elements, each identified by an index or key. Arrays are one of the most fundamental data structures in computer science.</p>
+                        <p><strong>Key Characteristics:</strong></p>
+                        <ul>
+                            <li><strong>Indexed:</strong> Elements are accessed by their position (index)</li>
+                            <li><strong>Contiguous:</strong> Elements are stored in consecutive memory locations</li>
+                            <li><strong>Fixed Size:</strong> Traditional arrays have a fixed size (though dynamic arrays can resize)</li>
+                            <li><strong>Random Access:</strong> Any element can be accessed directly in constant time</li>
+                        </ul>
+                        <p style="margin-top: 15px;"><strong>Common Operations:</strong></p>
+                        <ul>
+                            <li><strong>Insert:</strong> Add a new element at a specific position</li>
+                            <li><strong>Delete:</strong> Remove an element from a specific position</li>
+                            <li><strong>Update:</strong> Change the value of an element at a specific position</li>
+                            <li><strong>Search:</strong> Find an element with a specific value</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Operation History Section -->
+                <div class="explanation-panel">
+                    <div class="history-header">
+                        <div class="panel-title">
+                            <i class="fas fa-history"></i> Operation History
+                        </div>
+                        <button class="clear-history" id="clearHistory">
+                            <i class="fas fa-trash"></i> Clear History
+                        </button>
+                    </div>
+                    <div class="explanation-content" id="explanationContent">
+                        <div class="step">
+                            <strong>Welcome to the Array Operations Visualizer!</strong><br>
+                            This tool helps you understand how arrays work by visualizing common operations. Use the quick actions to perform operations and see the results here.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Insert Modal -->
+    <div class="modal" id="insertModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <i class="fas fa-plus-circle"></i>
+                    Insert Value
+                </div>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="input-group">
+                <label for="insertValue">Value (1-99)</label>
+                <input type="number" id="insertValue" placeholder="Enter a number" min="1" max="99">
+                <div class="error-message" id="insertValueError">Please enter a valid number between 1 and 99</div>
+            </div>
+            <div class="input-group">
+                <label for="insertIndex">Index (Optional)</label>
+                <input type="number" id="insertIndex" placeholder="Enter index position">
+                <div class="error-message" id="insertIndexError">Please enter a valid index</div>
+            </div>
+            <div class="operation-steps">
+                <div class="step-indicator step-active">
+                    <div class="step-number">1</div>
+                    <div class="step-text">Enter value and index</div>
+                </div>
+                <div class="step-indicator">
+                    <div class="step-number">2</div>
+                    <div class="step-text">Confirm insertion</div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn-light" id="cancelInsert">Cancel</button>
+                <button class="btn-secondary" id="confirmInsert">Insert</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Modal -->
+    <div class="modal" id="deleteModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <i class="fas fa-minus-circle"></i>
+                    Delete Value
+                </div>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="input-group">
+                <label for="deleteIndex">Index</label>
+                <input type="number" id="deleteIndex" placeholder="Enter index to delete">
+                <div class="error-message" id="deleteIndexError">Please enter a valid index</div>
+            </div>
+            <div class="operation-steps">
+                <div class="step-indicator step-active">
+                    <div class="step-number">1</div>
+                    <div class="step-text">Enter index to delete</div>
+                </div>
+                <div class="step-indicator">
+                    <div class="step-number">2</div>
+                    <div class="step-text">Confirm deletion</div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn-light" id="cancelDelete">Cancel</button>
+                <button class="btn-danger" id="confirmDelete">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Update Modal -->
+    <div class="modal" id="updateModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <i class="fas fa-edit"></i>
+                    Update Value
+                </div>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="input-group">
+                <label for="updateValue">New Value (1-99)</label>
+                <input type="number" id="updateValue" placeholder="Enter new value" min="1" max="99">
+                <div class="error-message" id="updateValueError">Please enter a valid number between 1 and 99</div>
+            </div>
+            <div class="input-group">
+                <label for="updateIndex">Index</label>
+                <input type="number" id="updateIndex" placeholder="Enter index to update">
+                <div class="error-message" id="updateIndexError">Please enter a valid index</div>
+            </div>
+            <div class="operation-steps">
+                <div class="step-indicator step-active">
+                    <div class="step-number">1</div>
+                    <div class="step-text">Enter new value and index</div>
+                </div>
+                <div class="step-indicator">
+                    <div class="step-number">2</div>
+                    <div class="step-text">Confirm update</div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn-light" id="cancelUpdate">Cancel</button>
+                <button class="btn-info" id="confirmUpdate">Update</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal" id="searchModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <i class="fas fa-search"></i>
+                    Search Value
+                </div>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="input-group">
+                <label for="searchValue">Value to Search (1-99)</label>
+                <input type="number" id="searchValue" placeholder="Enter value to search" min="1" max="99">
+                <div class="error-message" id="searchValueError">Please enter a valid number between 1 and 99</div>
+            </div>
+            <div class="operation-steps">
+                <div class="step-indicator step-active">
+                    <div class="step-number">1</div>
+                    <div class="step-text">Enter value to search</div>
+                </div>
+                <div class="step-indicator">
+                    <div class="step-number">2</div>
+                    <div class="step-text">Start search</div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn-light" id="cancelSearch">Cancel</button>
+                <button class="btn-warning" id="confirmSearch">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
